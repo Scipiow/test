@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+    body{
+        background-color: black;
+    }
+    .Container{
+        display: flex;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .Bar{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        padding: 2rem;
+        color: whitesmoke;
+    }
+
+    .Plan-Container{
+       position: relative;
+       flex:1;
+       text-align: left;
+       min-width: 200px;
+       height: 300px;
+       padding: 25px;
+       border-radius: 10px
+       
+    }
+    
+    .Plan-list{
+        position: absolute;
+        top: 35%;
+        list-style:square;
+        text-align: left;
+        padding: 0;
+    }
+
+    .Plan-Title{
+        font-weight: bolder;
+    }
+    
+    .Plan-Price{
+        font-weight: bolder;
+        font-size: 40px;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .Plan-Description{
+        font-style: italic;
+    }
+    .Button{
+        
+        border: none;
+        padding: 15px;
+        background-color: #040800;
+        color: azure;
+        border-radius: 10px;
+        position: absolute;
+        top: 80%;
+    }
+
+  
+
+    .Bar-Stuff{
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    #Simple-Plan{
+        background-color:  #EE4E4E;
+    }
+    
+    #Efficient-Plan{
+        background-color: #219C90;
+    }
+
+    #Team-Plan{
+        background-color: #FFC700;
+    }
+    </style>
+    
+
+        
+</head>
+<body>
+    
+    <div class="Bar"> 
+        <div class="Bar-Stuff">Features</div>
+        <div class="Bar-Stuff">Pices</div>
+        <div class="Bar-Stuff">Intergrations</div>
+        <div class="Bar-Stuff">Log In</div>
+        <div class="Bar-Stuff">Get Started</div>
+    </div>
+    <div class="Container">
+        <div class="Plan-Container" id="Simple-Plan">
+            <div class="Plan-Title">Simple</div>
+            <div class="Plan-Price">Free</div>
+            <div class="Plan-Description">Free plan for all users</div>
+                <ul class="Plan-list">
+                    <li>Store up to 20 businesses</li>
+                    <li>2 collaborators</li>
+                    <li>Unlimited collaboration</li>
+                    <li>End to end encryption</li>
+                    <li>Mac, PC and Android</li>
+                </ul>
+            <button class="Button">Get Simple Plan</button>
+        </div>
+
+        <div class="Plan-Container" id="Efficient-Plan">
+            <div class="Plan-Title">Efficient</div>
+            <div class="Plan-Price">15$/month</div>
+            <div class="Plan-Description">Ideal for individual creators</div>
+                <ul class="Plan-list">
+                    <li>Everything in simple</li>
+                    <li>512 GB of storage</li>
+                    <li>Access to AI suggestions</li>
+                    <li>Email and Text support</li>
+                </ul>
+            <button class="Button">Get Simple Plan</button>
+        </div>
+        
+        <div class="Plan-Container" id="Team-Plan">
+            <div class="Plan-Title">Team</div>
+            <div class="Plan-Price">25$/month</div>
+            <div class="Plan-Description">Ideal for collaborations</div>
+                <ul class="Plan-list">
+                    <li>Unllimited members</li>
+                    <li>1TB of storage</li>
+                    <li>Everything in efficient</li>
+                    <li>Access to 24/7 support</li>
+                </ul>
+            <button class="Button">Get Simple Plan</button>
+        </div>
+    </div>
+    
+</body>
+</html>    
